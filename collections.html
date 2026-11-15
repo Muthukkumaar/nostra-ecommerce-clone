@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Offer Bar -->
+    <div class="offer-bar" id="offer-bar">
+        <p>Sign Up and <strong>GET 20% OFF</strong> for your first Order</p>
+        <i class="fa-solid fa-xmark" id="offer-close"></i>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo"><a href="index.html">Nostra</a></h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#new-arrivals">New Arrival</a></li>
+            <li><a href="index.html#most-wanted">Most Wanted</a></li>
+            <li><a href="collections.html" class="active">Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Side Navbar -->
+    <aside class="side-navbar" id="side-navbar">
+        <div class="side-nav-close" id="side-nav-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="side-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#new-arrivals">New Arrival</a></li>
+            <li><a href="index.html#most-wanted">Most Wanted</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Collections Layout -->
+    <main class="collections-container">
+        
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+            <div class="filter-group">
+                <h3>Occasion</h3>
+                <label><input type="checkbox" class="filter-checkbox" data-category="occasion" value="summer"> Summer</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="occasion" value="party"> Party</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="occasion" value="beach"> Beach</label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Colors</h3>
+                <label><input type="checkbox" class="filter-checkbox" data-category="color" value="red"> Red</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="color" value="blue"> Blue</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="color" value="white"> White</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="color" value="green"> Green</label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Arrivals</h3>
+                <label><input type="checkbox" class="filter-checkbox" data-category="arrival" value="new"> New</label>
+                <label><input type="checkbox" class="filter-checkbox" data-category="arrival" value="old"> Old</label>
+            </div>
+
+            <button id="clear-filters" class="btn-outline">Clear All Filters</button>
+        </aside>
+
+        <!-- Product Section -->
+        <section class="products-area">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for shirts, jackets, summer wear...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- No Results Message -->
+            <p id="no-results" class="no-results" style="display: none;">No products match your search or selected filters.</p>
+
+            <!-- Product Grid -->
+            <div class="collections-grid" id="product-grid">
+                
+                <div class="product-card" data-occasion="summer" data-color="white" data-arrival="new">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=500&q=80" alt="Floral Summer Shirt">
+                    <h3>Floral Summer Shirt</h3>
+                    <p class="price">₹1,299</p>
+                    <span class="tag">Summer • White</span>
+                </div>
+
+                <div class="product-card" data-occasion="beach" data-color="green" data-arrival="new">
+                    <img src="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?auto=format&fit=crop&w=500&q=80" alt="Summer Green Shirt">
+                    <h3>Summer Green Shirt</h3>
+                    <p class="price">₹1,199</p>
+                    <span class="tag">Beach • Green</span>
+                </div>
+
+                <div class="product-card" data-occasion="party" data-color="red" data-arrival="old">
+                    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=500&q=80" alt="Party Red Casual Shirt">
+                    <h3>Party Red Casual Shirt</h3>
+                    <p class="price">₹1,599</p>
+                    <span class="tag">Party • Red</span>
+                </div>
+
+                <div class="product-card" data-occasion="beach" data-color="blue" data-arrival="new">
+                    <img src="https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=500&q=80" alt="Beach Blue Linen Shirt">
+                    <h3>Beach Blue Linen Shirt</h3>
+                    <p class="price">₹1,399</p>
+                    <span class="tag">Beach • Blue</span>
+                </div>
+
+                <div class="product-card" data-occasion="party" data-color="white" data-arrival="new">
+                    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=80" alt="Formal White Oxford">
+                    <h3>Formal White Oxford</h3>
+                    <p class="price">₹1,799</p>
+                    <span class="tag">Party • White</span>
+                </div>
+
+                <div class="product-card" data-occasion="summer" data-color="blue" data-arrival="old">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=500&q=80" alt="Ocean Blue Tee">
+                    <h3>Ocean Blue Tee</h3>
+                    <p class="price">₹899</p>
+                    <span class="tag">Summer • Blue</span>
+                </div>
+
+                <div class="product-card" data-occasion="party" data-color="green" data-arrival="old">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=80" alt="Olive Evening Jacket">
+                    <h3>Olive Evening Jacket</h3>
+                    <p class="price">₹2,499</p>
+                    <span class="tag">Party • Green</span>
+                </div>
+
+                <div class="product-card" data-occasion="beach" data-color="red" data-arrival="new">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Coral Sunset Shirt">
+                    <h3>Coral Sunset Shirt</h3>
+                    <p class="price">₹1,249</p>
+                    <span class="tag">Beach • Red</span>
+                </div>
+
+                <div class="product-card" data-occasion="summer" data-color="white" data-arrival="old">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=500&q=80" alt="Classic White Cotton Tee">
+                    <h3>Classic White Cotton Tee</h3>
+                    <p class="price">₹799</p>
+                    <span class="tag">Summer • White</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Nostra updates!');">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn-primary">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Nostra</h2>
+            <p>The Standard chunk of modern everyday fashion, crafted with precision and timeless minimalism.</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p class="copyright">@ 2026 Nostra.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
